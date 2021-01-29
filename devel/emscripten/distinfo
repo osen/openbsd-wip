@@ -1,0 +1,6 @@
+SHA256 (emscripten/binaryen-99.tar.gz) = ZqxEMDZ/IJZGZwO4F0nbg22PR2blQrBC1k54tgE3LPc=
+SHA256 (emscripten/emscripten-2.0.12.tar.gz) = 2UGcnqbfTJWCo6Cf3q/sFvXzxkhm9vr4aYnqHvmfVOo=
+SHA256 (emscripten/llvm-12.0.0-rc1.tar.gz) = 28D9IclStHSHABk99gut+5d0RMs057qIctF1QZ6VoAw=
+SIZE (emscripten/binaryen-99.tar.gz) = 3642692
+SIZE (emscripten/emscripten-2.0.12.tar.gz) = 27338219
+SIZE (emscripten/llvm-12.0.0-rc1.tar.gz) = 134164708

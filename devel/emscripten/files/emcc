@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Find absolute path of Emscripten
+PREFIX="$(cd "$(dirname "$(which "$0")")" && cd .. && pwd)"
+EMDIR="$PREFIX/libexec/emscripten"
+BASENAME="$(basename "$0")"
+EMPROG="$EMDIR/$BASENAME"
+
+# Emscripten now correctly finds python
+#export PYTHON=python3.8
+
+# Environmental variables for the site_emscripten script to use
+export EMSCRIPTEN="$EMDIR"
+export LLVM="$EMDIR/llvm/bin"
+export BINARYEN="$EMDIR/binaryen"
+export NODE=node
+export JAVA=java
+
+# Forward arguments to respective script in Emscripten directory
+exec "$EMPROG" "$@"
